@@ -26,7 +26,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: CORS_ORIGIN
-        value: https://linkshelf-frontend.onrender.com  
+        value: https://linkshelf-cors-build-fix-1.onrender.com  
       # ================================================================
       # BUG #2 (partial): CORS_ORIGIN is missing here!
       # The backend needs to know the frontend URL for CORS.
@@ -45,7 +45,7 @@ services:
       - key: NODE_ENV
         value: production
       - key: VITE_API_URL
-        value: https://linkshelf-api.onrender.com 
+        value: https://linkshelf-cors-build-fix.onrender.com 
       # ================================================================
       # BUG #2: VITE_API_URL is NOT set here!
       # The Vite build needs this at BUILD TIME to bake the API URL
