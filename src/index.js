@@ -54,6 +54,8 @@ app.use(
 
 app.use(express.json());
 
+
+
 // Routes
 app.use("/api/health", healthRoutes);
 app.use("/api/auth", authRoutes);
@@ -73,6 +75,7 @@ app.use((err, req, res, next) => {
   console.error("Unhandled error:", err);
   res.status(500).json({ error: "Internal server error." });
 });
+
 
 // Start the server
 app.listen(PORT, () => {
